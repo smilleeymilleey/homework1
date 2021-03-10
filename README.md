@@ -1,117 +1,120 @@
-# Career Connection
+# 01 HTML, CSS, and Git: Code Refactor
 
-## Career Connection
+## Your Task
 
-![Career Services Logo](./assets/cs_logo.png#right)
+Be sure to review the [Homework Guide](./Homework-Guide/README.md) before you start working on this assignment! This week is an odd-numbered week, so your homework is an on-the-job ticket&mdash;meaning that you'll begin with starter code that you need to modify. 
 
-Welcome to your first Career Connection! In each unit of this course, Career Connections will review real-world applications for the material covered, preparing you to be tested on your new knowledge in technical interviews and equipping you with strategies to become employer-competitive.
+**Refactoring** existing code (improving it without changing what it does) to meet a certain set of standards or to implement a new technology is a common task for front-end and junior developers. For this particular homework assignment, a marketing agency has hired you to refactor an existing site to make it more accessible. 
 
-We've consulted many employers to learn what will help applicants stand out from the crowd. With that knowledge, we'll suggest steps that you can take every week to reach that point.
+> **Important**: When working with someone else's code, you should adhere to the **Scout Rule**&mdash;always leave the code a little cleaner than when you found it.
 
-### Becoming Employer-Competitive
+An increasingly important consideration for businesses, web **accessibility** ensures that people with disabilities can access a website using assistive technologies like video captions, screen readers, and braille keyboards. Accessibility is good for business&mdash;for one thing, accessible sites rank higher in search engines like Google. It also helps companies avoid litigation, which might arise if people with disabilities can't access a website.
 
-Here at Career Services, we often refer to two job-preparedness levels: **employer-ready** and **employer-competitive**. Let's review what these terms mean:
+Accessibility can include complex requirements, but your tech lead has given you a small list of specific criteria for this project. These criteria are documented in the Acceptance Criteria section.
 
-* **Employer-ready** means that you meet the minimum requirements to apply for a developer job. You have strong, complete job search materials (such as a resume, portfolio, and LinkedIn profile). With some luck, an employer might notice your application and decide that you fit their needs.
+To impress clients, you should always exceed expectations and improve the codebase for long-term sustainability. For example, check that all links are functioning correctly. You can also increase the efficiency of the CSS by consolidating the selectors and properties, organizing them to follow the semantic structure of the HTML elements, and including comments before each element or section of the page.
 
-* **Employer-competitive** means that you've given yourself the best chance to secure your desired job. You've compiled excellent job search materials, you know how to prepare for interviews, and you use multiple networking strategies to proactively seek and pursue the jobs you want. 
+Are you ready to begin? Here are this week's homework requirements.
 
-    > **Deep Dive:** To learn more about becoming employer-competitive, see this [Intro to Career Services](https://sites.google.com/2u.com/careerservices-webdev/coding-milestones/intro-to-career-services). 
+## User Story
 
-Most of the students who work with Career Services to become employer-competitive find employment within six months after graduation! 
+```
+AS A marketing agency
+I WANT a codebase that follows accessibility standards
+SO THAT our own site is optimized for search engines
+```
 
-Becoming employer-competitive requires that you start now to position yourself as a developer, think like a developer, and engage with the online development community. Ready to get started? Complete the following three steps, and you’ll be that much closer to acing the job interview when the time comes.
+## Acceptance Criteria
 
-#### Step #1: Discover What's Out There
+```
+GIVEN a webpage meets accessibility standards
+WHEN I view the source code
+THEN I find semantic HTML elements
+WHEN I view the structure of the HTML elements
+THEN I find that the elements follow a logical structure independent of styling and positioning
+WHEN I view the image elements
+THEN I find accessible alt attributes
+WHEN I view the heading attributes
+THEN they fall in sequential order
+WHEN I view the title element
+THEN I find a concise, descriptive title
+```
 
-Peruse open source projects to discover what other developers are building. Pay attention to what others write in their commit messages. You can start by reviewing the following projects on GitHub:
+## Mock-Up
 
-* [ChartJS](https://github.com/chartjs/Chart.js)
+The following image shows the web application's appearance and functionality:
 
-* [D3js](https://github.com/d3/d3)
+![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](./Assets/01-html-css-git-homework-demo.png)
 
-* [Flux](https://github.com/facebook/flux)
+> **Note**: This layout is designed for desktop viewing, so you may notice that some of the elements don't look like the mock-up at a resolution smaller than 768px. Eventually you'll learn how to make elements responsive so that your web application is optimized for any screen size.
 
-#### Step #2: Learn How to Market Yourself
+## Getting Started
 
-Browse professionally designed websites and apps for inspiration as you prepare to build a portfolio. The following links provide numerous examples of style and layout:
+Follow these instructions to create your project and deploy it to GitHub Pages:
 
-* [10 Fantastic Portfolio Websites from Silicon Valley Design Leads](https://medium.com/@bestfolios/10-fantastic-portfolio-websites-from-silicon-valley-design-leads-2d84b384dba6)
+1. Create a new repository on your GitHub account and clone it to your computer.
 
-* [One Page Love](https://onepagelove.com/inspiration/portfolio)
+2. When you're ready to deploy, use the `git add`, `git commit`, and `git push` commands to save and push your code to your GitHub repository.
 
-* [10 Awesome Web Developer Portfolios](https://codeburst.io/10-awesome-web-developer-portfolios-d266b32e6154)
+3. Navigate to your GitHub repository in the browser and then select the Settings tab on the right side of the page.
 
-#### Step #3: Code a Lot&mdash;and Put It All on GitHub
+4. On the Settings page, scroll down to the GitHub Pages section. Then, in the section labeled Source, select the `main` branch as your source.
 
-Many companies will ask you to pair-program with one of their developers during an interview, so practice this skill with a friend or classmate. Also, because GitHub makes it easy for employers to check your commit history, make sure that both you and your partner commit to GitHub regularly. Don’t forget to keep your commit messages clean and professional!
+5. Navigate to <your-github-username.github.io/your-repository-name> and you will find that your new webpage has gone live! For example, if your GitHub username is "lernantino" and the project is "css-demo-site", then your URL would be <lernantino.github.io/css-demo-site>.
 
-Review your own code commit chart periodically to see how you appear to employers. The following image shows an example of a commit chart:
+You can also refer to this [YouTube video on enabling GitHub Pages](https://youtu.be/P4Mu1t5rIXg) for more guidance.
 
-![A chart displays squares that represent days in each month, with boxes shaded green to indicate commit activity.](./assets/github.png)
+> **Important**: It might take a few minutes for GitHub pages to display your site correctly. If your project does not deploy or display correctly, check that all file paths in your application are relative and use the right casing. GitHub is case-sensitive, an inccorect capital or lowercase letter could cause problems in deployment.
 
-In this chart, each green box represents a time when a commit was made. The darker green indicates more commits. Big gray spaces look bad to prospective employers, while lots of green boxes indicate high activity levels.
+Be sure to add, commit, and push your work to see the most up-to-date version of your app!
 
-### Look to the Future
+## Grading Requirements
 
-Git, HTML, and CSS are fundamental to any web application that you develop, so you’re already on your way to becoming a junior web developer! 
+This homework is graded based on the following criteria: 
 
-At some point, you might want to advance to the role of senior developer or principal developer&mdash;or maybe even chief technology officer. Senior developers work on complex projects with a variety of technologies and tools. To prepare for this as, use plenty of tools and methodologies from current real-world projects as you learn to code.
+### Technical Acceptance Criteria: 40%
 
-But it all begins with HTML, CSS, and Git. Though it's unlikely that you'll ever interview specifically for an HTML job, you'll almost definitely face questions about HTML and CSS during the interview process. Start practicing these skills now.
+* Satisfies all of the preceding acceptance criteria plus the following code improvements:
 
-Complete the following steps to start familiarizing yourself with the job market.
+  * Application's links all function correctly.
 
-#### Step #1: Investigate Developer Job Listings
+  * Application's CSS selectors and properties are consolidated and organized to follow semantic structure.
 
-[Indeed.com](https://www.indeed.com/) is a great resource for finding a variety of job postings. Visit the website and search for jobs that use HTML, CSS, and Git.
+  * Application's CSS file is properly commented.
 
-The following image shows what that search might look like:
+### Deployment: 32%
 
-![On the Indeed search page, "html" has been entered in the search box labeled "what", with "Nashville, TN" entered under "where".](./assets/indeed.png)
+* Application deployed at live URL.
 
-Review the search results for each category. Then write your answers to the following questions:
+* Application loads with no errors.
 
-* **Where do HTML, CSS, and Git typically appear in the job description?**
+* Application GitHub URL submitted.
 
-    You might find the terms listed with other technologies under a heading like Skills Required, Tech Stack, or something similar. These lists can be intimidating, but think of them as wish lists&mdash;most companies know that they won’t get everything they want. Don’t be afraid to apply for jobs where you only know 60% or 70% of the required technologies. Employers are also looking for that all-important **cultural fit**, meaning that they want someone who will work well with the team. Technical skills can be taught, but cultural fit can't be.
+* GitHub repository contains application code.
 
-* **What other skills are listed alongside HTML, CSS, and Git?**
+### Application Quality: 15%
 
-    Besides HTML, CSS, and Git, you might see JavaScript, object-oriented design, SQL, MongoDB, Bootstrap, Rest, JSON, or React. By the end of this course, you'll possess these skills too. You might see some technologies listed&mdash;like ASP.NET, Spring, Angular, or VueJS&mdash;that aren't covered in this course. Yet the skills you'll learn transfer directly to these other technologies. They aren't all that different, anyway!
+* Application resembles mock-up provided in the homework instructions (at least 90%).
 
-* **What level of experience, in years, are employers typically looking for?**
+### Repository Quality: 13%
 
-    You’ll notice that almost all job postings specify at least two to three years of development experience. Those looking for senior developers will call for five to eight years minimum. Again, treat these requests like a wish list. If you see a job posting along the lines of “front-end developer, two years experience,” you can and should apply for that job.
+* Repository has a unique name.
 
-#### Step #2: Add Technical Skills to Your Resume
+* Repository follows best practices for file structure and naming conventions.
 
-Before you move on to the next module, make sure to add HTML, CSS, and Git to the Technical Skills list on your resume. This will help you pass those pesky automated resume scanners and will indicate to potential employers that you have the skills they need.
+* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-> **Deep Dive:** To learn more, refer to the [Develop Your Resume milestone page](https://sites.google.com/2u.com/careerservices-webdev/coding-milestones/milestone-develop-your-resume).
+* Repository contains multiple descriptive commit messages.
 
-### Prepare for the Technical Interview
+* Repository contains quality README file with description, screenshot, and link to deployed application.
 
-Many companies use algorithm questions during the technical interview. We’ll start exploring those when we learn JavaScript. For HTML, CSS, and Git, consider the following common technical interview questions:
+## Review
 
-* Which browsers support HTML5?
+You are required to submit the following for review:
 
-* Which two attributes should every `<img>` element have?
+* The URL of the deployed application.
 
-* What's the difference between a class selector and an id selector?
-
-* Why is it preferable to use external style sheets instead of inline CSS?
-
-* What are the advantages of using Git?
-
-When you've answered these questions on your own, search the internet to check your answers.
-
-### Career Services Events
-
-![Career Services online events logo](./assets/online-events.png)
-
-To learn more about the technical interviewing process, see [Career Services' upcoming workshops](https://careerservicesonlineevents.splashthat.com/).
+* The URL of the GitHub repository, with a unique name and a README that describes the project.
 
 ---
-
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
